@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTTERY</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/23831bcd64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/card.css" />
+
+    <link rel="stylesheet" href="../css/carousel.css" />
+    <script src="../js/main_js.js" defer></script>
+    <script src="../js/detail.js" defer></script>
+    <link rel="stylesheet" href="../css/main_style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/write_share.css" />
+    <link rel="stylesheet" href="../css/detail_info.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img class="lottery_logo" src="../image/small_lotte.png" alt="">
+            <a href="../html/main.html">LOTTERY</a>
+        </div>
+        <ul class="navbar__menu">
+            <li><a href="../html/share.html">Share</a></li>
+            <li><a href="../html/request.html">Request</a></li>
+            <li><a href="../html/write.html">Write</a></li>
+            <li><a href="../html/about.html">About</a></li> 
+        </ul>
+        <ul class="navbar__mypage">
+            <li><a href="../html/mypage.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+
+        <a href="#" class="navbar__toggle">
+            <i class="fas fa-bars" id="hamburger"></i>
+        </a>
+    </nav>
+
+    <div>
+        <img src="../image/share_pic.png" alt="" style="width: 100%;">
+    </div>
+
+    <div class="courses-container">
+        <div class="course">
+            <div class="course-preview">
+                <img src="../image/donut/lotus.png" alt="" style="width:100%">
+            </div>
+            <div class="course-info">
+                <div class="progress-container">
+                    <div class="progress"></div>
+                    <span class="progress-text">
+                        <h5>00:50:12</h5>
+                    </span>
+                </div>
+                <h6>로터스</h6>
+                <h6>유니스트 지점</h6>
+                <h2>100개 남음</h2>
+                <p>오늘 비가 와서 그런가 생각보다 많이 남았네요ㅜㅜ 필요하신분 가져가세요~ 오시기 전에 핸드폰 번호로 문자 한 번 주세요!</p>
+                <p>010-1234-5678</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="title">
+            <h3>유니스트 지점 - 로터스</h3>
+        </div>
+        <div class="form">
+            <form action="" method="POST" onsubmit="return submit_click(true)" id="submit_form">
+                <div class="input_field">
+                    <label for="">요청 지점</label>
+                    <input type="text" class="input" value="구영리점" required id="store">
+                </div>
+                <div class="input_field">
+                    <label for="">요청할 갯수</label>
+                    <input type="number" class="input" min="1" max="100" required id="number">
+                </div>
+                <div class="input_field">
+                    <label for="">예상 픽업 시간</label>
+                    <input type="time" id="time" class="input" min="" max="22:00:00" required id="time">
+                </div>
+                <div class="input_field">
+                    <label for="">이메일 주소</label>
+                    <input type="email" class="input">
+                </div>
+                <div class="input_field">
+                    <label for="">휴대폰 번호</label>
+                    <input type="tel" class="input" placeholder="ex) 010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+                </div>
+                <div class="input_field">
+                    <label for="">요청 사항</label>
+                    <textarea class="textarea"></textarea>
+                </div>
+                <div class="input_field">
+                    <input type="submit" value="제가 가져갈게요" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>LOTTERY</h3>
+            <p class="footer-company-name">UNIST-LIKELION &copy; 2020</p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>제작</span>
+                차준형 정현준 복영규 조영상
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/likelion.UNIST"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/PapimonLikelion/lottery"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
