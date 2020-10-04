@@ -1,3 +1,9 @@
+var date = new Date();
+var hour = date.getHours();
+var min = date.getMinutes();
+document.getElementById('time').min = `${hour}:${min}`
+// console.log(document.getElementById('time').min)
+
 function submit_click(check) {
     var store = document.getElementById("store").value;
     //어떤 도넛인지
